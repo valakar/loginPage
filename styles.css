@@ -1,1 +1,169 @@
-styles.css
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html, body {
+  min-height: 100%;
+}
+body {
+  background: #544; /*fallback*/
+  background: linear-gradient(#544, #565);
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: -webkit-filter .3s ease-out;
+  -moz-transition: -moz-filter .3s ease-out;
+  -ms-transition: -ms-filter .3s ease-out;
+  -o-transition: -o-filter .3s ease-out;
+  transition: -webkit-filter .3s ease-out;
+}
+a:hover {
+  -webkit-filter: brightness(0.2) saturate(3);
+  filter: brightness(0.2) saturate(3);
+}
+
+
+#main-container {
+  width: 100%;
+  height: 100%;
+}
+
+#sign-up {
+  width: auto;
+  max-width: 400px;
+  /*height: 500px;*/
+  background: #dedede;
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+#sign-up form {
+  padding: 15px;
+}
+
+#sign-up form h1 {
+  font-size: 2em;
+  font-weight: 300;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+
+#sign-up form h1:before {
+  content: "";
+  display: inline-block;
+  background: url('images/tag.png') no-repeat bottom;
+  width: 15px;
+  height: 25px;
+  background-size: 70%;
+}
+
+#sign-up form h1:after {
+  content: "";
+  display: inline-block;
+  background: url('images/tag.png') no-repeat top;
+  width: 15px;
+  height: 25px;
+  background-size: 70%;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+#sign-up form input {
+  width: 90%;
+  margin: 5px 0px;
+  padding: 15px 10px;
+  background: #ededed;
+  color: rgba(76, 76, 76, 0.6);
+  outline: none;
+  border: 1px solid #d3d3d3;
+}
+
+#sign-up form button {
+  text-transform: uppercase;
+  width: 90%;
+  outline: none;
+  box-sizing: content-box;
+  padding: 10px;
+  margin: 15px 0; 
+  background: -moz-linear-gradient(#9fbf00,#80ab00);
+  background: -o-linear-gradient(#9fbf00,#80ab00);
+  background: -webkit-linear-gradient(#9fbf00,#80ab00);
+  background: linear-gradient(#9fbf00,#80ab00);
+  background-color: #9fbf00;
+  color: white;
+  font-weight: 300;
+  font-size: 1em;
+  border: 0;
+  cursor: pointer;
+  -webkit-transition: -webkit-filter .3s ease-out;
+  -moz-transition: -moz-filter .3s ease-out;
+  -ms-transition: -ms-filter .3s ease-out;
+  -o-transition: -o-filter .3s ease-out;
+  transition: -webkit-filter .3s ease-out;
+}
+
+#sign-up form button:hover {
+  -webkit-filter: brightness(1.1) saturate(0.9);
+  filter: brightness(1.1) saturate(0.9);
+}
+
+#sign-up form hr {
+  margin: 40px 0; 
+}
+
+#sign-up form a {
+  color: #999191;
+  width: 90%;
+  margin: 15px auto;
+  padding: 15px 10px;
+  display: block;
+  border: 1px solid;
+}
