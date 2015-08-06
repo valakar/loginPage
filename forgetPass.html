@@ -6,19 +6,27 @@
   <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'> -->
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
-  <div id="main-container">
-    
-    <div id="sign-up">
-      <form action="#">
-        <h1>SIGN IN</h1>
-        <input type="email" id="email" name="email"placeholder="Email" required>
-        <button id="submit-btn">GET NEW PASSWORD</button>
-        <hr>
-        <a href="login.html">Log in</a>
-        <a href="index.html">I want to create new account</a>
-      </form>
+<body class="preload">
+  <script>
+    (function(){
+      window.onload = (function(){
+        document.body.className = '';
+      });
+    })()
+  </script>
+    <div id="main-container">
+      <div id="sign-up">
+        <form action="#">
+          <filedset>
+            <legend><h1>RESET</h1></legend>
+            <input type="email" id="email" name="email"placeholder="Email" required>
+            <button id="submit-btn">GET NEW PASSWORD</button>
+            <hr>
+            <a href="login.html">Log in</a>
+            <a href="index.html">I want to create new account</a>
+          </filedset>
+        </form>
+      </div>
     </div>
-  </div>
 </body>
 </html>
